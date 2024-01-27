@@ -3,6 +3,9 @@
 #https://github.com/mtmedoera/pros_analysis_tool.git
 #git@github.com:mtmedoera/pros_analysis_tool.git
 
+#https://github.com/mtmedoera/Direct_Pros_Analysis_Tool.git
+#git@github.com:mtmedoera/Direct_Pros_Analysis_Tool.git
+
 from fastapi import FastAPI
 from pydantic import BaseModel
 import os
