@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\mtmm2\OneDrive\デスクトップ\目論見書等分析ツール‗デプロイ\flask"
+VIRTUAL_ENV="C:\Users\mtmm2\OneDrive\デスクトップ\目論見書等分析ツール_デプロイ\flask"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\mtmm2\OneDrive\デスクトップ\目論見書等分析ツール‗デプロイ\flask
+set VIRTUAL_ENV=C:\Users\mtmm2\OneDrive\デスクトップ\目論見書等分析ツール_デプロイ\flask
 
 if not defined PROMPT set PROMPT=$P$G
 
