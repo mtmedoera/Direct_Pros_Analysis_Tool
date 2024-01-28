@@ -13,14 +13,14 @@ import google.generativeai as genai
 
 app = FastAPI()
 
-class RequestData(BaseModel):
-    text2gemini: str
-    condition_text: str
-
 # トップページ
 @app.get('/')
 async def index(title):
     return {"Reading": 'read_disclosure'}
+
+class RequestData(BaseModel):
+    text2gemini: str
+    condition_text: str
 
 # POST が送信された時（入力）と予測値（出力）の定義
 @app.post("/summary")
