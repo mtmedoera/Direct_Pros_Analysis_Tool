@@ -28,8 +28,11 @@ async def gemini_contact(request_data: RequestData):
     text2gemini = request_data.text2gemini
     condition_text = request_data.condition_text
 
-    os.environ['GOOGLE_API_KEY'] = 'AIzaSyBtnV5l0VgMYie0sviM5nrgsNxL1UwBCfY'
-    genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+    #os.environ['GOOGLE_API_KEY'] = 'xxxxxx'
+    api_key = os.getenv("GOOGLE_API_KEY")
+    genai.configure(api_key=api_key)
+    
+    #genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
     model = genai.GenerativeModel(model_name='gemini-pro')
     chat = model.start_chat()
 
