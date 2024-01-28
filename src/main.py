@@ -3,9 +3,6 @@
 
 #Start-Process "cmd.exe"
 
-#https://github.com/mtmedoera/pros_analysis_tool.git
-#git@github.com:mtmedoera/pros_analysis_tool.git
-
 #https://github.com/mtmedoera/Direct_Pros_Analysis_Tool.git
 #git@github.com:mtmedoera/Direct_Pros_Analysis_Tool.git
 
