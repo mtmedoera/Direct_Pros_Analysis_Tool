@@ -1,7 +1,8 @@
-#streamlit run app.py ; uvicorn main:app --reload
+#streamlit run src\app.py
 #uvicorn src.main:app --reload
 
-#Start-Process "cmd.exe" -ArgumentList "/k streamlit run app.py ; uvicorn main:app --reload"
+#Start-Process "cmd.exe"
+
 #https://github.com/mtmedoera/pros_analysis_tool.git
 #git@github.com:mtmedoera/pros_analysis_tool.git
 
@@ -12,7 +13,6 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 import os
 import google.generativeai as genai
-
 
 app = FastAPI()
 
