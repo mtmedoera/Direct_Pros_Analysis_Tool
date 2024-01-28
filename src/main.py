@@ -17,8 +17,10 @@ app = FastAPI()
 
 # トップページ
 @app.get('/')
-async def index(title):
+async def root():
     return {"Reading": 'read_disclosure'}
+#async def index(title):
+#    return {"Reading": 'read_disclosure'}
 
 class RequestData(BaseModel):
     text2gemini: str
