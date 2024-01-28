@@ -1,6 +1,8 @@
 #streamlit run src\app.py
 #uvicorn src.main:app --reload
 
+#web: uvicorn src/main:app --reload
+
 #Start-Process "cmd.exe"
 
 #https://github.com/mtmedoera/Direct_Pros_Analysis_Tool.git
