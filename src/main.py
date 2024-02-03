@@ -16,9 +16,12 @@ import google.generativeai as genai
 app = FastAPI()
 
 # トップページ
+
+#async def root():
+#    return {"Reading": 'read_disclosure'}
 @app.get('/')
-async def root():
-    return {"Reading": 'read_disclosure'}
+async def read_root():
+    return {"message": "Hello World"}
 #async def index(title):
 #    return {"Reading": 'read_disclosure'}
 
@@ -32,7 +35,7 @@ async def gemini_contact(request_data: RequestData):
     text2gemini = request_data.text2gemini
     condition_text = request_data.condition_text
 
-    #os.environ['GOOGLE_API_KEY'] = 'xxxxxx'
+    #os.environ['GOOGLE_API_KEY'] = 'xxxx'
     api_key = os.getenv("GOOGLE_API_KEY")
     genai.configure(api_key=api_key)
     

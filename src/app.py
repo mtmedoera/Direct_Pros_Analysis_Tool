@@ -85,7 +85,8 @@ def show_button_read_pdf(button_label, uploaded_file, condition_text):
                     "condition_text": condition_text
                 }
 
-                url = "http://localhost:8000/summary"
+                #url = "http://localhost:8000/summary"
+                url = "https://pros-analysis-tool.onrender.com/summary"
                 data_to_send = {"text2gemini": text2gemini, "condition_text": condition_text}
                 response = requests.post(url, json=data_to_send)
 
